@@ -1,12 +1,11 @@
-import { SignUp } from '@clerk/nextjs'
+import { SignUp } from "@clerk/nextjs";
 
 const page = () => {
   return (
     <div>
-      <SignUp
+      <SignUp />
     </div>
-  )
-}
+  );
+};
 
-export default page
-<SignUp
+export default page;
