@@ -64,7 +64,6 @@ const DashboardView = ({ insights }) => {
   const OutlookIcon = getMarketOutlookInfo(insights.marketOutlook).icon;
   const outlookColor = getMarketOutlookInfo(insights.marketOutlook).color;
 
-  // Format dates using date-fns
   const lastUpdatedDate = format(new Date(insights.lastUpdated), "dd/MM/yyyy");
   const nextUpdateDistance = formatDistanceToNow(
     new Date(insights.nextUpdate),
@@ -76,7 +75,6 @@ const DashboardView = ({ insights }) => {
         <Badge variant="outline">Last updated: {lastUpdatedDate}</Badge>
       </div>
 
-      {/* Market Overview Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
@@ -140,7 +138,6 @@ const DashboardView = ({ insights }) => {
         </Card>
       </div>
 
-      {/* Salary Ranges Chart */}
       <Card className="col-span-4">
         <CardHeader>
           <CardTitle>Salary Ranges by Role</CardTitle>
@@ -181,7 +178,6 @@ const DashboardView = ({ insights }) => {
         </CardContent>
       </Card>
 
-      {/* Industry Trends */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card>
           <CardHeader>
