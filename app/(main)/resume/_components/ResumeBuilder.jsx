@@ -85,7 +85,7 @@ const ResumeBuilder = ({ initialContent }) => {
     if (contactInfo.mobile) parts.push(`📱 ${contactInfo.mobile}`);
     if (contactInfo.linkedin)
       parts.push(`💼 [LinkedIn](${contactInfo.linkedin})`);
-    if (contactInfo.twitter) parts.push(`🐦 [Twitter](${contactInfo.twitter})`);
+    if (contactInfo.github) parts.push(`🐦 [Github](${contactInfo.github})`);
 
     return parts.length > 0
       ? `## <div align="center">${user.fullName}</div>
