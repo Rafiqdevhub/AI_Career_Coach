@@ -31,7 +31,7 @@ const HeroSection = () => {
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
           <h1 className="text-5xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title animate-gradient">
-            Your AI Career Coach for
+            AI Career Coach For
             <br />
             Professional Success
           </h1>
@@ -41,7 +41,7 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="flex justify-center space-x-4">
-          <Link href="/dashboard">
+          <Link href="/interview">
             <Button size="lg" className="px-8">
               Get Started
             </Button>
